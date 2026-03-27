@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+/* Header */
+.header-container {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+.brand-main {
+    color: #e91e63;
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    line-height: 1.2;
+}
+.brand-sub {
+    font-size: 14px;
+    line-height: 1.4;
+}
+nav {
+    display:flex;
+    justify-content: right;
+    align-items: center;
+
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-item a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-item a:hover {
+    text-decoration: underline;
+}
+/* PRESENTATION */
+.hero {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-primary {
+    background-color: #e91e63;
+    color: #fff;
+}
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+.btn-primary:hover {
+    background-color: #d81b60;
+}
+.btn-secondary:hover {
+    background-color: #bbb;
+}
+/* PORTFOLIO */
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+
+.portfolio {
+    background-color: #F9F5FF; /* plus doux que gris */
+    padding: 80px 20px;
+}
+
+.portfolio-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+
+    /* relief */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    /* animation */
+    transition: all 0.3s ease;
+}
+
+
+/* effet au hover */
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* suit la card */
+}
+
+.portfolio-caption {
+    font-size: 15px;
+    margin-top: 12px;
+    color: #6B7280; /* gris plus doux */
+}
+/* SERVICES */
+.services {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.services-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2D2D2D;
+}
+.services-list {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+.service-item {
+    background-color: #F9F5FF;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.service-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2D2D2D;
+}
+.service-text {
+    font-size: 15px;
+    color: #6B7280;
+}
+/* TARIFS */
+.pricing { 
+    background-color: #ffffff; 
+    padding: 80px 20px; 
+}
+.pricing-container { 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+.pricing-title { 
+   font-size: 36px; 
+   font-weight: 700; 
+   text-align: center; 
+   margin-bottom: 50px; 
+   color: #2D2D2D;
+}
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+.pricing-card {
+    background-color: #F9F5FF;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.pricing-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2D2D2D;
+}
+.pricing-price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2D2D2D;
+}
+.pricing-features li {
+    font-size: 15px;
+    color: #6B7280;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background: linear-gradient(135deg, #fbc2eb, #A6C1EE);
+    padding: 80px 20px;
+
+}
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2D2D2D;
+}
+.contact-text {
+    font-size: 17px;
+    color: #4B5563;
+    margin-bottom: 30px;
+}
+.contact-link {
+    background-color: #ffffff;
+    color: #2D2D2D;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.contact-links:hover {
+    /* background-color: #f0f0f0; */
+    transform: translate(-3px);
+}
+/* FOOTER */
+.footer {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 1px solid #f1f1f1;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-text {
+    font-size: 15px;
+    color: #6B7280;
+    margin-bottom: 6px;
+}
+.footer-subtext {
+    font-size: 13px;
+    color: #9CA3AF;
+}
+/* MENU BURGER */
+.burger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2D2D2D;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+    .hero-title {
+        font-size: 36px;
+    }
+    .hero-text {
+        font-size: 16px;
+    }
+    .portfolio-title,
+    .services-title,
+    .pricing-title,
+    .contact-title {
+        font-size: 30px;
+    }
+    .burger{
+        display: block;
+    }
+    .header-nav {
+        display: none;
+        width: 100%;
+    }
+    .header-nav.active {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
