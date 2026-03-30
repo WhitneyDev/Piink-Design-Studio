@@ -1,196 +1,406 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Piink Design Studio</title>
+  <meta
+    name="description"
+    content="Panels Twitch, flyers et visuels personnalisés pour streamers, créateurs de contenu et petites marques."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+  <div class="container nav">
+    <a href="#hero" class="logo">Piink Design Studio</a>
 
-  <!-- Header -->
-<header>
-  <div class="header-container">
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <div class="header-brand">
-      <div class="brand-main">Piink</div>
-      <div class="brand-sub">Design Studio</div>
-    </div>
-  <!-- BUTOON MENU BURGER -->
-<button class="burger">
-  ☰
-</button>
-
-    <nav class="header-nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="">Accueil</a></li>
-        <li class="nav-item"><a href="#portfolio">Créations</a></li>
-        <li class="nav-item"><a href="#services">Services</a></li>
-        <li class="nav-item"><a href="#pricing">Tarifs</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="#services">Services</a>
+      <a href="#twitch-panels">Panels Twitch</a>
+      <a href="#packs">Packs</a>
+      <a href="#flyers">Flyers</a>
+      <a href="#about">À propos</a>
+      <a href="#contact" class="nav-btn">Contact</a>
     </nav>
   </div>
 </header>
-  <!-- Main Content -->
-<section class="hero">
-  <div class="hero-container">
 
-    <div class="hero-content">
-      
-      <h1 class="hero-title">
-        Création de flyers modernes et impactants
-      </h1>
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">Design visuel personnalisé</span>
+          <h1>
+            Des créations douces, modernes et
+            <span>pensées pour ton univers</span>
+          </h1>
+          <p class="hero-text">
+            Je crée des panels Twitch, flyers et visuels personnalisés pour les
+            streamers, créateurs de contenu et petites marques qui veulent une
+            image cohérente, esthétique et professionnelle.
+          </p>
 
-      <p class="hero-text">
-        Des visuels pensés pour mettre en valeur votre activité, vos événements et vos offres.
+          <div class="hero-actions">
+            <a href="#twitch-panels" class="btn btn-primary">Voir mes créations</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          </div>
+
+          <div class="hero-features">
+            <div class="hero-feature">
+              <strong>100%</strong>
+              <span>Personnalisé</span>
+            </div>
+            <div class="hero-feature">
+              <strong>Cozy</strong>
+              <span>Design doux</span>
+            </div>
+            <div class="hero-feature">
+              <strong>PNG</strong>
+              <span>Prêt à utiliser</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <div class="hero-preview">
+            <div class="preview-banner">Piink Swan ✦ Stream bientôt</div>
+            <div class="preview-screen">
+              <span>OFFLINE</span>
+            </div>
+            <div class="preview-panels">
+              <div>ABOUT</div>
+              <div>RULES</div>
+              <div>SOCIALS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Mes services</span>
+          <h2>Des visuels pensés pour attirer l’œil</h2>
+          <p>
+            Je propose des créations graphiques personnalisées pour mettre en
+            valeur ton contenu avec une identité cohérente.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🎮</div>
+            <h3>Panels Twitch</h3>
+            <p>
+              Des panels esthétiques et lisibles pour donner une vraie identité
+              à ta chaîne.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🖼️</div>
+            <h3>Bannières & visuels</h3>
+            <p>
+              Des créations adaptées à Twitch, YouTube, Discord ou aux réseaux
+              sociaux.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Flyers</h3>
+            <p>
+              Des visuels élégants et attractifs pour présenter une offre, un
+              événement ou une activité.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="twitch-panels section" id="twitch-panels">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Panels Twitch</span>
+          <h2>Un exemple de pack cozy</h2>
+          <p>
+            Voici un exemple de mockup pour montrer le rendu d’un pack sur une
+            chaîne Twitch. Tu peux remplacer l’image ci-dessous par ton visuel.
+          </p>
+        </div>
+
+        <div class="showcase-card">
+          <img
+            src="image/mockup-twitch.jpg"
+            alt="Mockup Twitch avec panels personnalisés"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="packs section" id="packs">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Mes packs</span>
+          <h2>Choisis le style qui te correspond</h2>
+          <p>
+            Chaque pack est personnalisable selon ton univers, tes couleurs et
+            l’ambiance de ta chaîne.
+          </p>
+        </div>
+
+        <div class="packs-grid">
+          <article class="pack-card pack-popular">
+            <div class="popular-badge">Populaire</div>
+
+            <div class="pack-preview">
+              <img src="image/mockup-twitch.jpg" alt="Pack Cozy Sloth" />
+            </div>
+
+            <span class="pack-tag">Exemple de pack</span>
+            <h3>Pack Cozy Sloth 🦥</h3>
+            <p class="pack-desc">
+              Un pack doux et chaleureux pour une chaîne accueillante, cozy et
+              unique.
+            </p>
+
+            <ul class="pack-list">
+              <li>5 panels personnalisés</li>
+              <li>Design cohérent avec ton univers</li>
+              <li>Format adapté à Twitch</li>
+              <li>Livraison en PNG</li>
+              <li>Style 100% personnalisable</li>
+            </ul>
+
+            <p class="pack-price">À partir de 30€</p>
+            <p class="pack-note">
+              Idéal pour streamers cozy, lifestyle, Sims ou Just Chatting.
+            </p>
+
+            <a href="#contact" class="btn btn-primary full-btn">Demander ce pack</a>
+          </article>
+
+          <article class="pack-card">
+            <div class="pack-preview placeholder-preview">
+              <div class="placeholder-content">Gaming Neon<br />Bientôt disponible</div>
+            </div>
+
+            <span class="pack-tag soft-tag">Bientôt disponible</span>
+            <h3>Pack Gaming Neon 🎮</h3>
+            <p class="pack-desc">
+              Un pack plus dynamique et intense, parfait pour une chaîne gaming
+              moderne.
+            </p>
+
+            <ul class="pack-list">
+              <li>5 panels personnalisés</li>
+              <li>Style gaming / neon</li>
+              <li>Format adapté à Twitch</li>
+              <li>Livraison en PNG</li>
+              <li>Personnalisation sur demande</li>
+            </ul>
+
+            <p class="pack-price">À partir de 30€</p>
+            <p class="pack-note">
+              Parfait pour streamers gaming, FPS, Fortnite ou contenu
+              compétitif.
+            </p>
+
+            <a href="#contact" class="btn btn-secondary full-btn">Demander ce style</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="flyers section" id="flyers">
+  <div class="container">
+    
+    <section class="flyers section" id="flyers">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-label">Flyers</span>
+      <h2>Des flyers modernes et élégants</h2>
+      <p>
+        Je crée des visuels pensés pour attirer l’attention et mettre en valeur
+        ton activité, ton événement ou ton projet.
       </p>
-
-      <div class="hero-buttons">
-        <a href="#portfolio" class="btn-primary">Voir mes créations</a>
-        <a href="mailto:piinkswanoff@gmail.com" class="btn-secondary">Me contacter</a>
-      </div>
-
     </div>
 
-  </div>
-</section>
-<!-- PORTFOLIO -->
-<section class="portfolio" id="portfolio">
-  <div class="portfolio-container">
+    <div class="flyers-grid">
+      <article class="flyer-card">
+        <img src="image/4.jpg" alt="Exemple flyer événementiel" />
+        <div class="flyer-overlay">
+          <h3>Flyer événementiel</h3>
+          <p>Un visuel impactant pour annoncer un événement ou une soirée.</p>
+        </div>
+      </article>
 
-    <h2 class="portfolio-title">Mes créations</h2>
+      <article class="flyer-card">
+        <img src="image/5.jpg" alt="Exemple flyer promotionnel" />
+        <div class="flyer-overlay">
+          <h3>Flyer promotionnel</h3>
+          <p>Idéal pour mettre en avant une offre, un service ou une promotion.</p>
+        </div>
+      </article>
 
-    <div class="portfolio-grid">
+      <article class="flyer-card">
+        <img src="image/3.jpg" alt="Exemple flyer créatif" />
+        <div class="flyer-overlay">
+          <h3>Flyer créatif</h3>
+          <p>Un design plus esthétique et personnalisé selon ton univers.</p>
+        </div>
+      </article>
+    </div>
 
-      <div class="portfolio-card">
-        <img src="image/3.jpg" alt="Flyer beauté">
-        <p class="portfolio-caption">Flyer beauté – projet fictif</p>
-      </div>
-      <div class="portfolio-card">
-        <img src="image/6.jpg" alt="Flyer restaurant">
-        <p class="portfolio-caption">Flyer restaurant – projet fictif</p>
-      </div>
-      <div class="portfolio-card">
-        <img src="image/4.jpg" alt="Flyer événement">
-        <p class="portfolio-caption">Flyer événement – projet fictif</p>
-      </div>
-      <div class="portfolio-card">
-        <img src="image/5.jpg" alt="Flyer promotion">
-        <p class="portfolio-caption">Flyer promotion – projet fictif</p>
-      </div>
-       <div class="portfolio-card">
-        <img src="image/1.jpg" alt="Flyer promotion">
-        <p class="portfolio-caption">Flyer Noël – Vrai projet</p>
-      </div>
-       <div class="portfolio-card">
-        <img src="image/2.jpg" alt="Flyer promotion">
-        <p class="portfolio-caption">Flyer Bánh Mi – Vrai projet</p>
-      </div>
+    <div class="flyers-cta">
+      <a href="#contact" class="btn btn-primary">Commander un flyer</a>
     </div>
   </div>
 </section>
-<!-- services -->
-<section class="services" id="services">
-  <div class="services-container">
-
-    <h2 class="services-title">Mes services</h2>
-
-    <div class="services-list">
-
-      <div class="service-item">
-        <h3 class="service-title">Flyers promotionnels</h3>
-        <p class="service-text">Des visuels conçus pour mettre en avant vos offres et promotions.</p>
-      </div>
-
-      <div class="service-item">
-        <h3 class="service-title">Flyers événementiels</h3>
-        <p class="service-text">Des créations adaptées à vos soirées, ouvertures et événements.</p>
-      </div>
-
-      <div class="service-item">
-        <h3 class="service-title">Visuels réseaux sociaux</h3>
-        <p class="service-text">Des formats pensés pour Instagram et votre communication en ligne.</p>
-      </div>
-
-      <div class="service-item">
-        <h3 class="service-title">Design personnalisé</h3>
-        <p class="service-text">Un visuel créé selon votre activité, votre style et votre image.</p>
-      </div>
-
-    </div>
 
   </div>
 </section>
-<!-- tarifs -->
-<section class="pricing" id="pricing">
-  <div class="pricing-container">
 
-    <h2 class="pricing-title">Tarifs</h2>
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <span class="section-label">Pourquoi moi ?</span>
+          <h2>Une approche douce, soignée et personnalisée</h2>
+          <p>
+            J’aime créer des visuels qui allient esthétique, lisibilité et
+            cohérence. Mon objectif est de proposer des créations qui reflètent
+            réellement ton univers.
+          </p>
+        </div>
 
-    <div class="pricing-cards">
+        <div class="about-points">
+          <div class="about-point">
+            <h3>Design personnalisé</h3>
+            <p>Chaque création est pensée pour ton style et ton ambiance.</p>
+          </div>
 
-      <div class="pricing-card">
-        <h3 class="pricing-name">Flyer simple</h3>
-        <p class="pricing-price">25€</p>
-        <ul class="pricing-features">
-          <li>Design personnalisé</li>
-          <li>2 modifications incluses</li>
-          <li>Livraison rapide</li>
-        </ul>
+          <div class="about-point">
+            <h3>Visuels harmonieux</h3>
+            <p>Couleurs, typographies et composition restent cohérentes.</p>
+          </div>
+
+          <div class="about-point">
+            <h3>Prêt à utiliser</h3>
+            <p>Tu reçois des fichiers PNG faciles à intégrer sur ta chaîne.</p>
+          </div>
+
+          <div class="about-point">
+            <h3>Échange simple</h3>
+            <p>Tu m’expliques ton projet, je m’adapte à ton univers.</p>
+          </div>
+        </div>
       </div>
-      <div class="pricing-card">
-        <h3 class="pricing-name">Pack 2 flyers</h3>
-        <p class="pricing-price">45€</p>
-        <ul class="pricing-features">
-          <li>2 designs personnalisés</li>
-          <li>2 modifications par flyer</li>
-          <li>Économie sur le prix</li>
-        </ul>
-      </div>
+    </section>
 
-      <div class="pricing-card">
-        <h3 class="pricing-name">Pack 3 flyers</h3>
-        <p class="pricing-price">60€</p>
-        <ul class="pricing-features">
-          <li>3 designs personnalisés</li>
-          <li>2 modifications par flyer</li>
-          <li>Idéal pour lancement</li>
-        </ul>
+    <section class="contact section" id="contact">
+      <div class="container contact-container">
+        <div class="section-heading">
+          <span class="section-label">Contact</span>
+          <h2>Parlons de ton projet</h2>
+          <p>
+            Une idée, une envie ou une commande ? Envoie-moi un message pour
+            discuter de ton univers.
+          </p>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom / Pseudo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ton nom ou pseudo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tonemail@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Type de demande</label>
+            <select id="service" name="service" required>
+              <option value="">Choisir un service</option>
+              <option value="panels">Panels Twitch</option>
+              <option value="flyers">Flyers</option>
+              <option value="banniere">Bannière / visuel</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Ton message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Décris ton projet ici..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+        </form>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Piink Design Studio — Tous droits réservés.</p>
+      <p>Création visuelle personnalisée pour Twitch & réseaux sociaux.</p>
     </div>
-  </div>
-</section>
-<!-- Contact -->
-<section class="contact" id="contact">
-  <div class="contact-container">
-    <h2 class="contact-title">Contact</h2>
-    <p class="contact-text">
-      Vous avez un projet ou une idée ? Contactez-moi pour créer votre flyer.
-    </p>
-    <div class="contact-links">
-      <a href="mailto:piinkswanoff@gmail.com" class="contact-link">Email</a>
-    </div>
-  </div>
-</section>
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <p class="footer-text">Piink Design Studio © 2026</p>
-    <p class="footer-subtext">Création de flyers modernes et impactants</p>
-  </div>
-</footer>
+  </footer>
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".header-nav");
+  const burgerBtn = document.getElementById("burger-btn");
+  const navMenu = document.getElementById("nav-menu");
 
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
+  burgerBtn.addEventListener("click", () => {
+    burgerBtn.classList.toggle("active");
+    navMenu.classList.toggle("open");
   });
-});
+
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      burgerBtn.classList.remove("active");
+      navMenu.classList.remove("open");
+    });
+  });
 </script>
 </body>
-
 </html>
