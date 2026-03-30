@@ -836,3 +836,8 @@ textarea {
     min-height: 360px;
   }
 }
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
